@@ -1,12 +1,12 @@
 # Fitbit Churn Prediction Pipeline
 
-End-to-end data pipeline for predicting and preventing Fitbit user churn. Built with Microsoft Fabric, PySpark, Delta Lake, and Power BI — from raw CSV ingestion to ML-driven activity nudges.
+End-to-end data pipeline for predicting and preventing Fitbit user churn. Built with Microsoft Fabric, PySpark, Delta Lake, and Power BI from raw CSV ingestion to ML-driven activity nudges.
 
 ---
 
 ## Problem
 
-Fitbit Premium has roughly 7% monthly churn. Users disengage gradually — fewer workouts, irregular sleep tracking, skipped logins — weeks before they actually cancel. Current systems only react to outright inactivity and miss these subtle signals.
+Fitbit Premium has roughly 7% monthly churn. Users disengage gradually fewer workouts, irregular sleep tracking, skipped logins weeks before they actually cancel. Current systems only react to outright inactivity and miss these subtle signals.
 
 This project builds a two-layer solution:
 1. A **predictive model** that identifies users likely to churn using activity and engagement patterns
@@ -136,9 +136,9 @@ fitbit-churn-pipeline/
 2. Create a Microsoft Fabric workspace and Lakehouse
 3. Upload the 18 CSV files to the `raw_fitbit` folder in your Lakehouse
 4. Attach the notebooks to the Lakehouse and run them in order:
-   - `01_data_engineering.ipynb` — builds the master table
-   - `02_analytics_visualization.ipynb` — creates views and charts
-   - `03_clustering_prediction.ipynb` — trains models and saves results
+   - `01_data_engineering.ipynb` -> builds the master table
+   - `02_analytics_visualization.ipynb` -> creates views and charts
+   - `03_clustering_prediction.ipynb` -> trains models and saves results
 
 ---
 
@@ -151,7 +151,7 @@ Based on the analysis, the pipeline delivers these actionable strategies:
 - **Adaptive step targets** (baseline +5–10%) instead of rigid 10K goals
 - **Micro-workout prompts** triggered when afternoon activity trends below baseline
 - **Early retention flags** when weekly step-bin distribution shifts downward
-- **Segmented messaging** — recognition for high-adherence users, coaching for the tail
+- **Segmented messaging** recognition for high-adherence users, coaching for the tail
 
 ---
 
